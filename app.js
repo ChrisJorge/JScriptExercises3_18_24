@@ -110,5 +110,22 @@ const reverseString = (str) => {
 
     return reversed;
 }
-console.log(reverseString('Hello'))
+
+
+const longestStringInArray = (data) =>{
+    this.data = data;
+    longest = 0;
+    
+
+    for (let i = 0; i < data.length; i++)
+    {
+        if(data[i].length > longest)
+        {
+            longest = data[i].length;
+        }
+    }
+    return longest;
+
+}
+console.log(longestStringInArray(['Hello', 'test', 'This is longest']))
 
