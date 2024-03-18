@@ -91,13 +91,9 @@ const multiplyArray = (data) =>{
     return ans;
 }
 
-// const numArgsthat = () =>{
-//     let num = 0
-//     for(let i = 0; i < arguments.length; i++){
-//         num ++
-//     }
-//     return num
-// }
+const numArgsthat = (...args) =>{
+    return args.length
+}
 
 const reverseString = (str) => {
     this.str = str;
@@ -145,5 +141,5 @@ const stringsLongerThan = (data, len) =>
     }
     return arr2;
 }
-console.log(stringsLongerThan(['say','hello','in','the','morning'], 3))
+console.log(numArgsthat(1, 3))
 
