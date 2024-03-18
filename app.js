@@ -40,41 +40,35 @@ const isCharAVowel = (char) =>
     char = char.toLowerCase()
     
 
-    if(char === 'a'){
-        return true;
-    }
-    else if(char === 'e')
+    switch (char)
     {
-        return true;
-    }
-    else if(char === 'i')
-    {
-        return true;
-    }
-    else if(char === 'o')
-    {
-        return true;
-    }
-    else if(char === 'u')
-    {
-        return true;
-    }
-    else if(char === 'y')
-    {
-        return true;
-    }
-    else
-    {
-        return false;
-    }
+        case 'a':
+            return true;
 
+        case 'e':
+            return true;
+        
+        case 'i':
+            return true;
+
+        case 'o':
+            return true;
+        
+        case 'u':
+            return true;
+        
+        case 'y':
+            return true;
+        
+        default:
+            return false;
+            
+    }
 }
 
 const sumArray = (data) =>{
     this.data = data;
     let ans = 0;
-// [1,2,3]
-// 0,1,2
     for (let i = 0; i < data.length; i++){
         ans += data[i];
     }
@@ -92,7 +86,7 @@ const multiplyArray = (data) =>{
 }
 
 const numArgsthat = (...args) =>{
-    return args.length
+    return args.length;
 }
 
 const reverseString = (str) => {
