@@ -127,5 +127,23 @@ const longestStringInArray = (data) =>{
     return longest;
 
 }
-console.log(longestStringInArray(['Hello', 'test', 'This is longest']))
+
+const stringsLongerThan = (data, len) =>
+{
+    this.data = data;
+    this.len = len;
+    let s = ''
+    let arr2 = [];
+
+    for (let i = 0; i < data.length; i++)
+    {
+        if(data[i].length > len)
+        {
+            s = data[i];
+            arr2.push(s);
+        }
+    }
+    return arr2;
+}
+console.log(stringsLongerThan(['say','hello','in','the','morning'], 3))
 
