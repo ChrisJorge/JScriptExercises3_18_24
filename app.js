@@ -73,7 +73,8 @@ const isCharAVowel = (char) =>
 const sumArray = (data) =>{
     this.data = data;
     let ans = 0;
-
+// [1,2,3]
+// 0,1,2
     for (let i = 0; i < data.length; i++){
         ans += data[i];
     }
@@ -89,4 +90,25 @@ const multiplyArray = (data) =>{
     }
     return ans;
 }
-console.log(multiplyArray([2,5]))
+
+// const numArgsthat = () =>{
+//     let num = 0
+//     for(let i = 0; i < arguments.length; i++){
+//         num ++
+//     }
+//     return num
+// }
+
+const reverseString = (str) => {
+    this.str = str;
+    let reversed = '';
+
+    for(let i = str.length - 1; i >= 0; i--)
+    {
+        reversed += str[i];
+    }
+
+    return reversed;
+}
+console.log(reverseString('Hello'))
+
