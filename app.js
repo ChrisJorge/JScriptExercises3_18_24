@@ -69,6 +69,24 @@ const isCharAVowel = (char) =>
     }
 
 }
-// console.log(maxOfTwoNumbers(5,5))
-console.log(maxOfThreeNumbers(9,40,5))
-console.log(isCharAVowel('A'))
+
+const sumArray = (data) =>{
+    this.data = data;
+    let ans = 0;
+
+    for (let i = 0; i < data.length; i++){
+        ans += data[i];
+    }
+    return ans;
+}
+
+const multiplyArray = (data) =>{
+    this.data = data;
+    let ans = 1;
+
+    for (let i = 0; i < data.length; i++){
+        ans *= data[i];
+    }
+    return ans;
+}
+console.log(multiplyArray([2,5]))
